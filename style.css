@@ -1,135 +1,53 @@
-.parent-container {
-    background-color: beige;
-    border: 2px solid black;
-    width: 75vw;
-    height: 50vw;
-    padding: 5px;
-    font-family: Arial, Helvetica, sans-serif;
-    /* position: relative; */
-    /* This is to switch and see how position absolute behaves */
-}
-
-.child {
-    padding: 25px;
-}
-
-/* 
-    ? Static
-    * default
-    * positioned in relation to elements
-    * top, bottom, left, right, z-index have NO effect
-*/
-.static {
-    border: 2px solid red;
-    background-color: red;
-    /* position: static; */
-    /* top: 250px; */
-    /* has no effect */
-}
-
-/* 
-    ? Relative
-    * just like static
-    * can be changed using top, bottom, left, right, z-index
-    * values are relative to its original static position
-    ! DO NOT USE! Breaks the flow!
-*/
-.relative {
-    border: 2px solid blueviolet;
-    background-color: blueviolet;
-    /* position: relative; */
-    top: 25px;
-    left: 25px;
-}
-
-/* 
-    ? Absolute
-    * removes element from the flow
-    * positions it relative to parent container
-    * if parent is static, it will move outside of parent container
-    * if parent is relative, it will move within parent container
-    * positioning defined by top, bottom, left, right, z-index
-*/
-.absolute {
-    border: 2px solid green;
-    background-color: green;
-    /* position: absolute; */
-    top: 0px;
-    left: 50px;
-}
-
-/* 
-    ? Fixed
-    * like absolute
-    * positioned to viewport
-    * doesn't move when scrolling
-    * positioning defined by top, bottom, left, right, z-index
-*/
-.fixed {
-    border: 2px solid teal;
-    background-color: teal;
-    /* position: fixed; */
-    top: 0;
-    left: 0;
-}
-
-/* 
-    ? Sticky
-    * mix of relative and fixed
-    * relative to the flow
-    * position definition used for when you start scrolling
-    * statys fixed when scrolling; relative when stationary
-*/
-.sticky {
-    border: 2px solid gray;
-    background-color: gray;
-    position: sticky;
-    top: 75px
-}
-
-/* 
-    ? Display Property
-    * treats an element as block or inline
-    * blocks are created top to bottom
-*/
-
-.display-container {
-    margin-top: 2em;
-}
-
 .block-container {
+    background-color: darkslategrey;
     border: 2px solid black;
-    margin-top: 2px;
-    /* display: inline; */
+    width: 100vs;
+    height: 500vw;
+    align-content: center;
+    font-size: 75pt;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-.inline-element {
-    margin: 5px;
-    /* display: block; */
+.h1 {
+    display: inline;
+    font-size: 75px;
+    font-family: cursive;
+    align-content: left;
 }
 
-.inline-block {
+.pretty-wolf {
+    position: relative;
+    align-self: right;
+}
+
+.gray-wolf {
+    position: relative;
+    align-self: left;
+}
+
+.p {
+    position: relative;
+    align-content: left;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.forest-dalmation {
+    position: relative;
+    align-self: right;
+}
+
+.dog-on-pot {
+    position: relative;
+    align-self: right;
+}
+
+.div {
+    background-color: darkslategrey;
     border: 2px solid black;
-    margin-top: 2px;
-
-    /* Initially a block */
-    display: inline-block;
-    width: 750px;
-    /* Allows us to set the width and height of now inline element */
-}
-
-.float-container {
-    margin-top: 3px;
-    background-color: beige;
-    border: 2px solid black;
-    width: 500px;
-    height: 500px;
-    padding: 25px;
-}
-
-.float-box {
-    border: 2px solid red;
-    width: 50px;
-    height: 50px;
-    float: right;
+    width: 100vs;
+    height: 500vw;
+    align-content: center;
+    font-size: 75pt;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
